@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+	<title>HappyLife</title>
+  
+  <!--web tag icon-bar-->
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/f/f6/Choice_toxicity_icon.png">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+<!-- 			  <div class="col-md-4"> -->
+            <h1><i class="fa fa-smile-o fa-2x"></i></h1>
+            <h1><span id="first_letter">H</span><b>appy</b>life</h1>
+<!-- 			  </div> -->
+
+<!-- 			  <div class="col-md-8"> -->
+			  	  <ul class="nav nav-pills">
+			  	  	<li class="active"><a href="#">Home</a></li>
+			  	  	<li><a href="#daily_calculation">Daily Calories Caculator</a></li>
+              <li><a href="#results">Dr Robot</a></li>
+			  	  	<li><a href="#Tips">Diet Tips</a></li>
+			  	  </ul>
+<!-- 			  </div> -->
+
+			</div>
+		</div>
+	</header>
+
+	<div class="jumbotron">
+      <div class="container">
+
+            <h1 >Think Healthy</h1>
+            <h1 >Live Healty</h1>
+            <h1 >Eat Healty</h1>
+            <h1 >Be Healthy</h1>
+
+
+        <div class="box">
+          <div class="box1">
+            <span>
+              <b></b>
+            </span>
+          </div>
+          <div class="box2">
+            <span>
+              <b></b>
+            </span>
+          </div>
+          <div class="box3">
+            <span>
+              <b></b>
+            </span>
+          </div>        
+          <div class="box4">
+            <span>
+              <b></b>
+            </span>
+           </div>
+        </div>   
+
+      </div>
+    </div>
+
+    <div class="calculation">
+    	<div class="container">
+    	   <h3>Calorie Calculator</h3>
+
+    		<div id="daily_calculation" class="row">
+
+    			<div class="col-md-5">
+    				<h2>Body Calorie Calculator</h2>
+    				<form id="MainForm">
+    					<span style="font-size:18px;">Age:</span> <input type="text" class="age" name="age" required><span>Years</span><br>
+
+    					<span style="font-size:18px;">Gender:</span> 
+    					<input type="radio" name="gender" value="male"><span>Male</span><i class="fa fa-male"></i>
+    					<input type="radio" name="gender" value="female"><span>Female</span><i class="fa fa-female"></i><br>
+    					
+    					<span style="font-size:18px;">Current Weight: </span> <input class="inputweight" type="text" name="inputweight">
+
+    					<input  type="radio" name="weight" value="pounds"><span>Pounds</span>
+    					<input  type="radio" name="weight" value="kilos"><span>Kilos</span><br>
+
+    					<span style="font-size:18px;">Height:</span> 
+
+              <input class="height" type="radio" name="height" value="feet"> <span>Feet Inches</span>
+    					<input class="height" type="radio" name="height" value="CMs"> <span>CMs</span> <br>
+
+    					<input class="Feet" type="text" name="height">Feet<input class="Inches" type="text" name="height"><span>Inches</span>
+
+    					<input class="CM" type="text" name="height"><span>CM</span><br>
+
+    					<span style="font-size:18px;">Activity Level:</span><br>
+    					<input type="radio" name="activity" value="sedentary"><span>Sedemtary:<br>Little or no Exercise/desk job</span><br>
+    					<input type="radio" name="activity" value="lightly"><span>Lightly active:<br>Light exercise/ sports 1-3 days/week</span><br>
+    					<input type="radio" name="activity" value="moderately"><span>Moderately active:<br>Moderate Exercise,sports 3-5 days/week</span><br>
+    					<input type="radio" name="activity" value="very"/><span>Very active:<br>Heavy Excercise/ sports 6-7 days/week</span><br>
+    					<input type="radio" name="activity" value="extremely"><span>Extremely active:<br>Very heavy exercise/ physical job/ training 2 x/day</span><br>
+
+
+    				</form>
+
+    				<button class="calories" onclick="myFunction">Caculation</button>
+    				<p class="BMI"></p>
+    				<p class="BMR"></p>
+    				<p class="TDEE"></p>
+
+    			</div>
+
+    			<div class="col-md-5">
+    				<h2>Daily Meal Calorie Calculator</h2>
+
+    			<div class="breakfast">
+            <h3>Breakfast</h3>
+            <select id="breakfast">
+              <option value="cereal">Cereal</option>
+              <option value="oatmeal">Oatmeal</option>
+              <option value="eggs">Scrambled Eggs</option>
+              <option value="meal">Breakfast Meal</option>
+            </select>
+            <br>
+            <button type="button" class="btn btn-info" id="mybreakfastBtn">Ingredients</button>
+            <button type="button" class="btn btn-info" id="breakfastSbm">Submit</button>
+          </div>
+
+          <div class="lunch">
+            <h3>Lunch</h3>
+            <select id="lunch" >  
+              <option value="soup" >Soup</option>
+              <option value="potato">Baked Potato</option>
+              <option value="chicken">Chicken</option>
+            </select>
+            <br>
+            <button type="button" class="btn btn-info" id="mylunchBtn">Ingredients</button>
+            <button type="button" class="btn btn-info" id="lunchSbm">Submit</button>
+          </div>
+
+          <div class="dinner">
+    				<h3>Dinner</h3>
+    				<select id="dinner">
+    					<option value="salad">Chiken Salad</option>
+               <div>
+    					<option value="rice">Beef Rice</option>
+    					<option value="fish">Fish</option>
+    				</select>
+            <br>
+            <button type="button" class="btn btn-info" id="mydinnerBtn">
+              Ingredients</button>
+            <button type="button" class="btn btn-info" id="dinnerSbm">Submit</button>
+    			</div>
+
+           <div class="cal">
+            <input type="text" id="bmeal" disabled><span>+</span><input type="text" id="lmeal" disabled><span>+</span><input type="text" id="dmeal" disabled><span>=</span><input type="text" id="total" disabled></span>
+<!--             <button type="button" class="btn" id="totalBtn">Submit</button> -->
+    			 </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+
+    <div id="results">
+    	<div class="container">
+    	   <h3>Final Results</h3>
+    		<div class="row">
+    			<div class="col-md-6">
+    				<p id = "words"> Hi,I am Dr Robot,I will advise you and maintain you healthy body...</p>
+    				<div class="robot">
+              <div class="beep"></div>
+              <div class="brain"></div>
+              <div class="torso">
+                <div class = "left">j</div>
+                <div class = "right">j</div>
+              </div>
+              <div class="foot"></div>
+    				</div>
+    				<button class="eyes">laser eyes off</button>
+            <button type="button" class="btn btn-info" onclick="myFunction()" id="report">Daily Calorie Report</button>
+            <button class="get_tips"><a href="#ten_tips">Get Some Tips</a></button>
+    			</div>
+    			<div class="col-md-6">
+            <div id = "information">
+    				<h2>What is BMI, BMR and TEDD?</h2>
+            <p><b>Basal metabolic rate (BMR)</b> is the amount of energy expended while at rest in a neutrally temperate environment, in the post-absorptive state (meaning that the digestive system is inactive, which requires about twelve hours of fasting).</p>
+            <p><b>Body mass index (BMI)</b> is a measure of body fat based on your weight in relation to your height, and applies to most adult men and women aged 20 and over.</p>
+            <p><b>TDEE (total daily energy expenditure)</b> TDEE is the number of calories burnt in a day scaling BMR to level of activity. This is the number of calories you need daily to maintain your current weight and is about the amount you should eat on the days you're not fasting.</p>
+            </div>
+
+            <div class="report">
+                 <div id="tableDiv"></div>  
+                 <div id="fid" style="display: none"></div>
+            </div>
+
+        </div>
+          
+    	</div>
+    </div>
+    
+    <div id="Tips">
+    	<div class="container">
+    		<div class="row">
+    			<h3 id="ten_tips">Feel Better, Live Better: 10 Tips for a healthy life</h3>
+          <ol class="healty_tips">
+            <li><span>Drink more water.</span> Most of us actually don’t drink enough water every day. Water is essential for our body to function – Do you know over 60% of our body is made up of water? Water is needed to carry out our body functions, remove waste and carry nutrients and oxygen around our body. Since we lose water every day through urine, bowel movements, perspiration and breathing, we need to replenish our water intake.</li>
+            <li><span>Get enough sleep.</span> When you don’t rest well, you compensate by eating more. Usually it’s junk food. Get enough rest and you don’t need to snack to stay awake. Also, lack of sleep causes premature aging, and you wouldn’t want that.</li>
+            <li><span>Exercise.</span> Not just a few times a week, but every day. Movement is life. Research has shown that exercising daily brings tremendous benefits to our health, including increase of life span, lowering of risk of diseases, higher bone density and weight loss. Increase activity in your life. Choose walking over transport for close distances. Climb the stairs instead of taking the lift. Join some aerobics classes.</li>
+            <li><span>Eat more fruits.</span> Fruits are a plethora of vitamins and minerals. Do you know that oranges offer more health benefits than Vitamin C pills? Taking in synthetic supplements are not the same as consuming the foods direct from nature. Fill your palate with these 10 most nutritious fruits: Watermelon, Apricots, Avocado, Apple, Cantaloupe, Grapefruit, Kiwi, Guava, Papaya, Strawberries.</li>
+            <li><span>Eat more vegetables.</span> Like fruits, vegetables are important for the well being of our health. Experts suggest that we should have 5-9 servings of fruits/vegetables, and unfortunately most people don’t even have at least 5 servings! Some of my favorite vegetables include: Kidney beans, black beans, asparagus, long beans, french beans, sprouts, button mushrooms and carrots.</li>
+            <li><span>Breathe. Deeply.</span> Oxygen is a vital source of life. You may know how to breathe, but are you breathing properly? Most of us don’t breathe properly – we take only shallow breathes and breathe to 1/3 of our lung capacity. Athletes are coached proper breathing techniques to get their best performance. A full breathis one where your lungs are completely filled, your abdomen expands and there’s minimum movement in your shoulders.</li>
+            <li><span>Don’t drink alcohol.</span> Like caffeine, alcohol is a diuretic. Not only that, alcohol is repeatedly proven to have negative effects on our body and health – impacting the proper functioning of our brain, liver, lungs, and other major organs. If you drink alcohol regularly, it’s time to cut it out.</li>
+            <li><span>Have healthy snacks.</span> If you’re hungry during work, eat healthy snacks, like fruits, salads, and fruit juices. These are nutritional and don’t give you that sugar rush. Have them readily available so you can dive in for a munch and stop when you’d had your fill. Get away from cookies and candy bars.</li>
+            <li><span >Drink fruit/veg smoothies.</span> I love smoothies because it’s a quick way to get vitamins and nutrients. Simply throw my favorite fruits into the blender, wait for 30 seconds, and it’s done! And it tastes great. I’m drinking an orange and banana smoothie write now as I’m writing this article and it’s delicious!</li>
+            <li><span>Hang out with healthy people.</span> You’re the average of the 5 people you spend the most time with, so the more time you spend around healthy people, the better it is. Eat with people who are health conscious and get workout buddies. It makes healthy living even more fun.</li>
+          </ol>
+    		</div>
+    	</div>
+    </div>
+
+    <footer>
+    	<div class="container">
+            <div class="row">
+            	<div class="col-md-4">
+                    <p>&copy Author:Wenshan Song</p>
+            	</div>
+<!--             	<div class="col-md-8">
+                    <p>Contact Email：niuniu_22clover@hotmail.com</p>
+                    <p>Date:16.02.2016</p>
+            	</div> -->
+            </div>
+    	</div>
+    </footer>
+
+    <!--breakfast-->
+
+    <!--cereal modal-->
+    <div class="modal fade" id="cereal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Breakfast Cereal</h4>
+          <h5>320 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/cereal.jpg" alt="cereal">
+          <ul>
+            <li>2 cups of cereal</li>
+            <li>8 oz 2% milk</li>
+            <li>1 banana</li>
+            <li>1 coffee or tea</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+     </div>
+    </div>
+
+    <!--oatmeal modal-->
+    <div class="modal fade" id="oatmeal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Oatmeal</h4>
+          <h5>325 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/oatmeal.jpg" alt="oatmeal">
+          <ul>
+            <li>1 cup oatmeal with rasberry</li>
+            <li>1 cup of fruit</li>
+            <li>8 oz 2% milk</li>
+            <li>1 coffee or tea</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+     </div>
+    </div>
+
+      <!--eggs modal-->
+    <div class="modal fade" id="eggs" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Scrambled Eggs</h4>
+          <h5>350 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/eggs.jpg" alt="oatmeal">
+          <ul>
+            <li>2 scrambled eggs</li>
+            <li>2 strips of turkey</li>
+            <li>bacon</li>
+            <li>1 pat of low fat butter</li>
+            <li>8 oz water</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+     </div>
+    </div>
+
+        <!--meal modal-->
+    <div class="modal fade" id="meal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">English Muffin</h4>
+          <h5>290 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/muffin.jpg" alt="oatmeal">
+          <ul>
+            <li>1 whole wheat English muffin</li>
+            <li>2 pats low fat butter</li>
+            <li>1/2 orange</li>
+            <li>1 hard boiled egg</li>
+            <li>1 pat of low fat butter</li>
+            <li>8 oz water or black coffee</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+     </div>
+    </div>
+    <!--lunch-->
+
+<!-- Modal soup-->
+  <div class="modal fade" id="soup" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Soup</h4>
+          <h5>315 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/soup.jpg" alt="oatmeal">
+          <ul>
+            <li>1 bowl of pumkin soup</li>
+            <li>2 tablespoons reduced fat oil and vinegar dressing</li>
+            <li>12 oz water</li>
+            <li>1 bread</li>
+            <li>1 small tossed salad</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Modal potato-->
+  <div class="modal fade" id="potato" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Baked Potato</h4>
+          <h5>450 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/potato.jpg" alt="potato">
+          <ul>
+            <li>1 medium baked potato</li>
+            <li>2 tablespoons sour cream</li>
+            <li>2 tablespoons salsa</li>
+            <li>Soya Beans</li>
+            <li>12 oz water</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Modal chicken-->
+  <div class="modal fade" id="chicken" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Chicken Fillets</h4>
+          <h5>430 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/chicken.jpg" alt="potato">
+          <ul>
+            <li>6 oz of chicken</li>
+            <li>1 cup of green beans</li>
+            <li>2 tablespoons salsa</li>
+            <li>2 pats of low-fat butter</li>
+            <li>12 oz water</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <!--dinner-->
+
+<!-- Modal salad-->
+  <div class="modal fade" id="salad" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Chicken Salad</h4>
+          <h5>400 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/salad.jpg" alt="salad">
+          <ul>
+            <li>2 tablespoons reduced fat oil and vinegar dressing</li>
+            <li>6 oz sliced chicken</li>
+            <li>1 boiled egg</li>
+            <li>6 cherry tomato</li>
+            <li>spinach</li>
+            <li>12 oz water</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Modal rice-->
+  <div class="modal fade" id="rice" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Beef Rice</h4>
+          <h5>550 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/rice.jpg" alt="beef_rice">
+          <ul>
+            <li>6 oz stewed beef</li>
+            <li>2 tablespoons of barbecue sauce</li>
+            <li>1 cup of broccoli</li>
+            <li>2 spring onions</li>
+            <li>12 oz water</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Modal fish-->
+  <div class="modal fade" id="fish" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Fish</h4>
+          <h5>520 Calories</h4>
+        </div>
+        <div class="modal-body">
+          <img src="image/fish.jpg" alt="fish">
+          <ul>
+            <li>6 oz broiled white fish</li>
+            <li>1/2 cup of peas</li>
+            <li>1/2 cup of broccoli</li>
+            <li>8 oz diet iced tea</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+<script>
+
+$(".calories").click(function() {
+  var age= parseInt($(".age").val());
+  var gender=$("input[name=gender]:checked").val();
+  var weight=$("input[name=weight]:checked").val();
+  var height=$("input[name=height]:checked").val();
+  var pounds=parseInt($(".inputweight").val());
+  var kilos=parseInt($(".inputweight").val());
+  var feet=parseInt($(".Feet").val());
+  var inches=parseInt($(".Inches").val());
+  var cm=parseInt($(".CM").val());
+  var active=$("input[name=activity]:checked").val();
+  
+
+  switch (active){
+  	case "sedentary":
+         factor=1.2;
+         break;
+  	case "lightly":
+  		   factor=1.375; 
+  		   break;
+  	case "moderately":
+  		   factor=1.55;
+  		   break;
+  	case "very":
+  		   factor=1.725;
+  		   break;
+  	case "extremely":
+  		   factor=1.9;
+  		   break;
+  }
+
+// if($(".age").val().length===0){
+//     $("input[name=age]").css("background-color","#f26632");
+//     $(".BMI").html("Please fill a number betweem 10-99");
+// }
+
+// else if(age<=10 || age>=99 || isNaN(age)==true){
+//     $("input[name=age]").css("background-color","#f26632");
+//     $(".BMI").html("Please fill a number betweem 10-99");
+// }
+
+// else if(age>10 && age<99){
+//     $("input[name=age]").css("background-color","white");
+// }
+
+// else if($(".inputweight").val().length===0){
+//     $("input[name=kilos]").css("background-color","#f26632");
+//     $(".BMI").html("Please fill a number");
+// }
+
+// else if(isNaN(kilos)==true){
+//     $("input[name=kilos]").css("background-color","#f26632");
+//     $(".BMI").html("Please fill a number");
+// }
+
+// else {
+//     $("input[name=age]").css("background-color","white");
+//     $(".BMI").css("display","none");
+// }
+
+if(gender==="female"){
+    if(weight==="kilos"&& height==="CMs")
+    {
+    	var BMR=655+9.6*kilos+1.8*cm-4.7*age;
+    	var BMI=kilos*10000/(cm*cm);
+
+    }
+    else if(weight==="kilos"&& height==="feet"){
+        var BMR=655+9.6*kilos+1.8*feet*30.48+1.8*inches*2.54-4.7*age;
+        var cm=30.84*feet+2.54*inches
+        var BMI=kilos*10000/(cm*cm);
+    }
+    else if (weight==="pounds"&& height==="CMs"){
+        var BMR=655+9.6*pounds*0.0435+1.8*cm-4.7*age;
+        var kilo=pounds*0.0435;
+        var BMI=kilos*10000/(cm*cm);
+    }
+    else if(weight==="pounds"&&height==="feet"){
+        var BMR=655+9.6*pounds*0.0435+1.8*feet*30.48+1.8*inches*2.54-4.7*age;
+        var kilos=pounds*0.0435;
+        var cm=30.84*feet+2.54*inches;
+        var BMI=kilos*10000/(cm*cm);
+    }
+
+      if(BMI<18.5){
+        $(".BMI").html("Your BMI is: " + Math.round(BMI) + ", You are under weight");
+      }
+      else if(BMI>18.5 && BMI <25){
+        $(".BMI").html("Your BMI is: " + Math.round(BMI) + ", You are normal weight");
+      }
+      else if(BMI>=25 && BMI <=30){
+        $(".BMI").html("Your BMI is: " + Math.round(BMI) + ", You are over weight");
+      }
+      else if(BMI>=30){
+        $(".BMI").html("Your BMI is: " + Math.round(BMI) + ", You are obesity , Doctor Robot is not happy!");
+        $(".brain").toggleClass("laser");
+      }
+
+      // $(".BMI").html("Your BMI is: " + Math.round(BMI));
+      $(".BMR").html("Your BMR is: " + Math.round(BMR));
+      $(".TDEE").html("Your TDEE is: " + Math.round(BMR*factor));
+ }
+
+else if(gender==="male"){
+    if(weight==="kilos"&& height==="CMs")
+    {
+      var BMR=Math.floor(66+13.7*kilos+5*cm-6.8*age);
+      var BMI=kilos*10000/(cm*cm);
+    }
+    else if(weight==="kilos"&& height==="feet"){
+        var BMR=66+13.7*kilos+5*feet*30.48+5*inches*2.54-6.8*age;
+        var cm=30.84*feet+2.54*inches;
+        var BMI=kilos*10000/(cm*cm);
+    }
+    else if (weight==="pounds"&& height==="CMs"){
+        var BMR=66+13.7*pounds*0.0435+5*cm-6.8*age;
+        var kilo=pounds*0.0435;
+        var BMI=kilos*10000/(cm*cm);   
+    }
+    else if(weight==="pounds"&&height==="feet"){
+        var BMR=66+13.7*pounds*0.0435+5*feet*30.48+5*inches*2.54-6.8*age;
+        var kilos=pounds*0.0435;
+        var cm=30.84*feet+2.54*inches;
+        var BMI=kilos*10000/(cm*cm);
+    }
+      if(BMI<18.5){
+        $(".BMI").html("Your BMI is: " + Math.round(BMI) + ", You are under weight");
+      }
+      else if(BMI>18.5 && BMI <25){
+        $(".BMI").html("Your BMI is: " + Math.round(BMI) + ", You are normal weight");
+      }
+      else if(BMI>=25 && BMI <=30){
+        $(".BMI").html("Your BMI is: " + Math.round(BMI) + ", You are over weight");
+      }
+      else if(BMI>=30){
+        $(".BMI").html("Your BMI is: " + Math.round(BMI) + ", You are obesity , Doctor Robot is not happy!");
+        $(".brain").toggleClass("laser");
+      }
+      $(".BMR").html("Your BMR is: " + Math.round(BMR));
+      $(".TDEE").html("Your TDEE is: " + Math.round(BMR*factor));
+
+ }
+
+});
+
+ $("#mybreakfastBtn").click(function(){
+      var option=$("#breakfast option:selected").val();
+
+      if(option==="cereal"){
+        $("#cereal").modal();
+      }
+      else if(option==="oatmeal"){
+        $("#oatmeal").modal();
+      }
+      else if(option==="eggs"){
+        $("#eggs").modal();
+      }
+      else if(option==="meal"){
+        $("#meal").modal();
+      }
+
+ });
+
+
+  $("#breakfastSbm").click(function(){
+
+      var option=$("#breakfast option:selected").val();
+      var bmeal=$("#bmeal").val();
+      var lmeal=$("#lmeal").val();
+      var dmeal=$("#dmeal").val();
+      total=$("#total").val();
+      var ldlength=lmeal.length+dmeal.length;
+
+      if(option==="cereal"){
+        cal1=320;
+      }
+      else if(option==="oatmeal"){
+        cal1=325;
+      }
+      else if(option==="eggs"){
+        cal1=350;
+      }
+      else if(option==="meal"){
+        cal1=290;
+      }
+
+      $("#bmeal").val(cal1.toString());
+
+       if(total.length==0||ldlength==0){
+           total=cal1;
+       }
+
+       else if(lmeal.length==3 && dmeal.length==0){
+
+          total=parseInt($("#lmeal").val())+cal1;
+       }
+
+       else if(dmeal.length==3 && lmeal.length==0){
+          total=parseInt($("#dmeal").val())+cal1;
+       }
+       
+       else if(lmeal.length==3 && dmeal.length==3){
+          total=parseInt($("#lmeal").val())+parseInt($("#dmeal").val())+cal1;
+       }        
+
+      $("#total").val(total.toString());
+ });
+
+  
+
+ $("#mylunchBtn").click(function(){
+      var option=$("#lunch option:selected").val();
+
+      if(option==="soup"){
+        $("#soup").modal();
+      }
+      else if(option==="potato"){
+        $("#potato").modal();
+      }
+      else if(option==="chicken"){
+        $("#chicken").modal();
+      }
+
+ });
+
+  $("#lunchSbm").click(function(){
+      var option=$("#lunch option:selected").val();
+      var bmeal=$("#bmeal").val();
+      var lmeal=$("#lmeal").val();
+      var dmeal=$("#dmeal").val();
+          total=$("#total").val();
+      var bdlength=bmeal.length+dmeal.length;
+
+      if(option==="soup"){
+         cal2=315;
+      }
+      else if(option==="potato"){
+         cal2=450;
+      }
+      else if(option==="chicken"){
+         cal2=430;
+      }
+      $("#lmeal").val(cal2.toString());
+
+       if(total.length==0||bdlength==0){
+           total=cal2;
+       }
+
+       else if(bmeal.length==3 && dmeal.length==0){
+
+          total=parseInt($("#bmeal").val())+cal2;
+       }
+
+       else if(dmeal.length==3 && bmeal.length==0){
+          total=parseInt($("#dmeal").val())+cal2;
+       }
+       
+       else if(bmeal.length==3 && dmeal.length==3){
+          total=parseInt($("#bmeal").val())+parseInt($("#dmeal").val())+cal2;
+       }        
+
+      $("#total").val(total.toString());
+ });
+      
+ $("#mydinnerBtn").click(function(){
+      var option=$("#dinner option:selected").val();
+
+      if(option==="salad"){
+        $("#salad").modal();
+      }
+      else if(option==="rice"){
+        $("#rice").modal();
+      }
+      else if(option==="fish"){
+        $("#fish").modal();
+      }
+
+ });
+
+  $("#dinnerSbm").click(function(){
+      var option=$("#dinner option:selected").val();
+      var bmeal=$("#bmeal").val();
+      var lmeal=$("#lmeal").val();
+      var dmeal=$("#dmeal").val();
+          total=$("#total").val();
+      var lblength=bmeal.length+lmeal.length;
+
+      if(option==="salad"){
+        cal3=400;
+      }
+      else if(option==="rice"){
+        cal3=550;
+      }
+      else if(option==="fish"){
+        cal3=520;
+      }
+      $("#dmeal").val(cal3.toString());
+
+      if(total.length==0||lblength==0){
+           total=cal3;
+       }
+
+       else if(bmeal.length==3 && lmeal.length==0){
+
+          total=parseInt($("#bmeal").val())+cal3;
+       }
+
+       else if(lmeal.length==3 && bmeal.length==0){
+          total=parseInt($("#lmeal").val())+cal3;
+       }
+       
+       else if(bmeal.length==3 && lmeal.length==3){
+          total=parseInt($("#bmeal").val())+parseInt($("#lmeal").val())+cal3;
+       }        
+
+        $("#total").val(total.toString());
+        
+ });
+
+
+/*$(".height").click(function() {
+    var height=$("input[name=height]:checked").val();
+
+    if(height==="CMs"){
+      $(".cms").css("display","block");
+    }
+
+    else if(height==="feet"){
+      $(".inch").css("display","block");
+    }
+
+}
+*/
+
+$(".eyes").click(function(){
+
+   $(".brain").toggleClass("laser");
+
+});
+
+
+
+</script>
+
+<script src="js/form.js"></script>
+</body>
+</html>
